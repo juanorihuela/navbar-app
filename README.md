@@ -1,12 +1,28 @@
-# React + Vite
+# App de Clima
+App de navbar Responsive
++ se ajusta a dispositivos móviles
++ los items se colapsan en un botón de menú
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Estructura del proyecto  
++ reactjs  
++ vite  
++ yarn (gestor de paquetes)  
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación  
 
-## Expanding the ESLint configuration
+### clonar repositorio
+`git clone <URL_REPO>`  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### instalar paquetes  
+Instala los paquetes usando yarn  
+`yarn install`
+
+### iniciar app  
+`yarn dev`
+
+
+## Pruebas  
+
+### ajusta la pantalla a un dispositivo móvil
++ Usa las herramientas del navegador para ajustar el tamaño de la pantalla

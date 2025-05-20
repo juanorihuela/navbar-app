@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+
+import menuImage from "./assets/icons/menu.svg";
+
+import styles from "./index.module.scss";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [toggleHeader, setToggleHeader] = useState(false);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <header>
+      <div id={styles.headerContainer}>
+        <div id={styles.titleSection}>
+          <h1>navbar app</h1>
+
+          <button onClick={() => setToggleHeader(!toggleHeader)} >
+            <img src={menuImage} alt="imageAlt" />
+          </button>
+        </div>
+
+        <ul className={`${styles.itemsSection} ${toggleHeader ? styles.on : styles.off}`}>
+          <li><a href="/">inicio</a></li>
+          <li><a href="/">nosotros</a></li>
+          <li><a href="/">contacto</a></li>
+        </ul>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </header>
   )
 }
 
